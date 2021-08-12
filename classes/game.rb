@@ -6,7 +6,8 @@ class Game
     @player1 = Player.new('LeBron James')
     @player2 = Player.new 'Stephen Curry'
     @player3 = Player.new 'Kevin Durant'
-    @players = [@player1, @player2].shuffle
+    @player4 = Player.new 'Kawhi Leonard'
+    @players = [@player1, @player2, @player3, @player4].shuffle
     @round = 1
   end
 
@@ -19,11 +20,11 @@ class Game
   end
 
   def get_attack_player
-    @players.first
+    @players.sample
   end
 
-  def get_defense_player
-    @players.last
+  def get_defense_player(attack_player)
+    @players.select {|player| player != attack_player}.sample
   end
 
   def game_over
@@ -55,7 +56,7 @@ class Game
     until game_over do
 
       attack_player = get_attack_player
-      defense_player = get_defense_player
+      defense_player = get_defense_player(attack_player)
 
       next_round
 
