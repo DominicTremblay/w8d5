@@ -8,11 +8,9 @@
 - Comparison between Ruby and JS
 - Intro to Ruby
 
-[Gist of examples](https://gist.github.com/DominicTremblay/95db442e4ff6c6d343b8616ed4468bd3)
-
 ### Learning a new language
 
-When learning a new language, you learn about:
+ When learning a new language, you learn about:
 
 - Learn a new paradigm
 - Learn a new framework
@@ -75,7 +73,7 @@ When learning a new language, you learn about:
 
 ### Intro to Ruby
 
-### Ruby Data Types
+#### Ruby Data Types
 
 All data types are objects based on classes.
 
@@ -87,7 +85,7 @@ All data types are objects based on classes.
 - Arrays
 - Hashes
 
-### Ruby Fundamentals
+#### Ruby Fundamentals
 
 [Gist of examples](https://gist.github.com/DominicTremblay/95db442e4ff6c6d343b8616ed4468bd3)
 
